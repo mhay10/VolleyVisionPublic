@@ -1,0 +1,11 @@
+{
+  "token": "TOKEN HERE",
+  "id": "ID HERE",
+  "roles": {
+    "leadership": "ROLE FOR LEADERSHIP"
+  },
+  "channels": {
+    "practice": ["PRACTICE CHANNELS"],
+    "tournaments": ["TOURNAMENT CHANNELS"]
+  }
+}

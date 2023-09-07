@@ -1,0 +1,36 @@
+{
+  "name": "volley-vision",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "chrono-node": "^2.6.3",
+    "discord.js": "^14.11.0",
+    "quick.db": "^9.1.6",
+    "strftime": "^0.10.2",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "typescript": "^5.1.6",
+    "write-file-atomic": "^5.0.1"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "start": "node lib/index.js",
+    "debug": "node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.4",
+    "@types/mongoose": "^5.11.97",
+    "@types/strftime": "^0.9.4",
+    "better-sqlite3": "^8.4.0",
+    "mysql2": "^3.4.5"
+  }
+}

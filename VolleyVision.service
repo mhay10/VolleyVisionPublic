@@ -1,0 +1,10 @@
+[Unit]
+After=multi-user.target
+
+[Service]
+ExecStart=/home/maxh/discord-bots/VolleyVision/start.sh
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
